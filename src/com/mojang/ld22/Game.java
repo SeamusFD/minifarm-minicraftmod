@@ -345,7 +345,6 @@ public class Game extends Canvas implements Runnable {
 		frame.setVisible(true);
 
 		game.start();
-
 	}
 
 	public void won() {

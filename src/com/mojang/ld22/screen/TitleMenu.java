@@ -1,6 +1,7 @@
 package com.mojang.ld22.screen;
 
 import com.mojang.ld22.gfx.Color;
+import com.mojang.ld22.gfx.ColorOptions;
 import com.mojang.ld22.gfx.Font;
 import com.mojang.ld22.gfx.Screen;
 import com.mojang.ld22.sound.Sound;
@@ -39,7 +40,7 @@ public class TitleMenu extends Menu {
 
 		int h = 4;
 		int w = 13;
-		int titleColor = Color.get(0, 010, 500, 551); //used to be 131
+		int titleColor = Color.get( 0, 010, 500, 551 ); //used to be 131
 		int xo = (screen.w - w * 8) / 2;
 		int yo = 24;
 		for (int y = 0; y < h; y++) {
