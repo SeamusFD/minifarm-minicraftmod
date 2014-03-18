@@ -30,7 +30,7 @@ public class Game extends Canvas implements Runnable {
 	private static final long serialVersionUID = 1L;
 	private Random random = new Random();
 	public static final String NAME = "MiniFarm";
-	public static final int HEIGHT = 340; //Used to be 120
+	public static final int HEIGHT = 335; //Used to be 120
 	public static final int WIDTH = 550; //Used to be 160
 	private static final int SCALE = 3;
 

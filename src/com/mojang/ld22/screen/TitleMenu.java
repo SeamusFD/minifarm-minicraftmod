@@ -8,7 +8,7 @@ import com.mojang.ld22.sound.Sound;
 public class TitleMenu extends Menu {
 	private int selected = 0;
 
-	private static final String[] options = { "Start game", "How to play", "About" };
+	private static final String[] options = { "Play game", "How to play", "About" };
 
 	public TitleMenu() {
 	}
@@ -50,7 +50,7 @@ public class TitleMenu extends Menu {
 			String msg = options[i];
 			int col = Color.get(0, 222, 222, 222);
 			if (i == selected) {
-				msg = "> " + msg + " <";
+				msg = "} " + msg + " {";
 				col = Color.get(0, 555, 555, 555);
 			}
 			Font.draw(msg, screen, (screen.w - msg.length() * 8) / 2, (8 + i) * 8, col);
