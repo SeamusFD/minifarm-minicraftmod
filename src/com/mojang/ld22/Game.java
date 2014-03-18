@@ -36,7 +36,7 @@ public class Game extends Canvas implements Runnable {
 
 	private BufferedImage image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
 	private int[] pixels = ((DataBufferInt) image.getRaster().getDataBuffer()).getData();
-	private boolean running = false;
+	public boolean running = false;
 	private Screen screen;
 	private Screen lightScreen;
 	private InputHandler input = new InputHandler(this);
@@ -299,7 +299,7 @@ public class Game extends Canvas implements Runnable {
 	}
 
 	private void renderFocusNagger() {
-		String msg = "Click to focus!";
+		String msg = "Click to Play!";
 		int xx = (WIDTH - msg.length() * 8) / 2;
 		int yy = (HEIGHT - 8) / 2;
 		int w = msg.length();
@@ -345,6 +345,7 @@ public class Game extends Canvas implements Runnable {
 		frame.setVisible(true);
 
 		game.start();
+
 	}
 
 	public void won() {
