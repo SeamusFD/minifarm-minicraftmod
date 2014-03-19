@@ -55,7 +55,7 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/com/mojang/ld22/screen/AboutMenu.java" line="2" class="AboutMenu.java" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -84,16 +84,36 @@
       <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="346" column="21" selection-start="9477" selection-end="9477" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5025">
+            <state line="309" column="43" selection-start="8128" selection-end="8128" vertical-scroll-proportion="0.0" vertical-offset="4635" max-vertical-offset="5385">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TitleMenu.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/screen/TitleMenu.java">
+      <file leaf-file-name="Crafting.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/crafting/Crafting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="72" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.4954955" vertical-offset="300" max-vertical-offset="1035">
+            <state line="26" column="98" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Level.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/level/Level.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="251" column="39" selection-start="6577" selection-end="6577" vertical-scroll-proportion="0.8423423" vertical-offset="3024" max-vertical-offset="4515">
+              <folding>
+                <element signature="e#888#918#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Farmer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/entity/Farmer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="68" column="45" selection-start="1810" selection-end="1810" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,19 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ColorOptions.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/gfx/ColorOptions.java">
+      <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/entity/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="5" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Color.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/gfx/Color.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="13" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+            <state line="277" column="45" selection-start="7400" selection-end="7417" vertical-scroll-proportion="0.0" vertical-offset="3555" max-vertical-offset="5745">
               <folding />
             </state>
           </provider>
@@ -142,6 +153,8 @@
         <option value="$PROJECT_DIR$/src/com/mojang/ld22/Game.java" />
         <option value="$PROJECT_DIR$/src/com/mojang/ld22/gfx/ColorOptions.java" />
         <option value="$PROJECT_DIR$/src/com/mojang/ld22/screen/TitleMenu.java" />
+        <option value="$PROJECT_DIR$/src/com/mojang/ld22/entity/Farmer.java" />
+        <option value="$PROJECT_DIR$/src/com/mojang/ld22/level/Level.java" />
       </list>
     </option>
   </component>
@@ -176,8 +189,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,7 +247,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gfx" />
+              <option name="myItemId" value="level" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MiniFarm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ld22" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -256,6 +289,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -276,6 +311,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.Client">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails" singleton="true">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -284,12 +325,6 @@
       <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <setting name="launchBrowser" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -315,38 +350,6 @@
       </option>
       <option name="moduleName" value="" />
       <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -375,6 +378,38 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -503,12 +538,13 @@
       <updated>1395075446846</updated>
       <workItem from="1395075458596" duration="2601000" />
       <workItem from="1395098470914" duration="4017000" />
-      <workItem from="1395150688471" duration="4744000" />
+      <workItem from="1395150688471" duration="6619000" />
+      <workItem from="1395234082862" duration="600000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11362000" />
+    <option name="totallyTimeSpent" value="13837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
@@ -519,7 +555,6 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -539,6 +574,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39955848" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -565,6 +601,25 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/Game.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="309" column="43" selection-start="8128" selection-end="8128" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/crafting/Crafting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="415" selection-end="415" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/icons.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="40" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5385">
           <folding />
         </state>
@@ -572,18 +627,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/screen/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="57" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="855">
-          <folding />
-        </state>
+        <state line="46" column="57" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="690" max-vertical-offset="855" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/screen/TitleMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="945">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="2" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="945" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/Game.java">
@@ -595,53 +644,32 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/1.6.0_65-b14-462.jdk/Contents/Home/src.jar!/src/javax/imageio/ImageIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1315" column="20" selection-start="47090" selection-end="47090" vertical-scroll-proportion="0.0" vertical-offset="19725" max-vertical-offset="23745">
-          <folding />
-        </state>
+        <state line="1315" column="20" selection-start="47090" selection-end="47090" vertical-scroll-proportion="0.0" vertical-offset="19725" max-vertical-offset="23745" />
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/1.6.0_65-b14-462.jdk/Contents/Home/src.jar!/src/javax/imageio/ImageIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1315" column="20" selection-start="47090" selection-end="47090" vertical-scroll-proportion="-0.990991" vertical-offset="19725" max-vertical-offset="23085">
-          <folding />
-        </state>
+        <state line="1315" column="20" selection-start="47090" selection-end="47090" vertical-scroll-proportion="-0.990991" vertical-offset="19725" max-vertical-offset="23085" />
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/1.6.0_65-b14-462.jdk/Contents/Home/src.jar!/src/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2058" column="24" selection-start="87295" selection-end="87295" vertical-scroll-proportion="0.8288288" vertical-offset="29568" max-vertical-offset="46515">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/entity/Zombie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="46" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0" vertical-offset="909" max-vertical-offset="1575" />
+        <state line="2058" column="24" selection-start="87295" selection-end="87295" vertical-scroll-proportion="0.8288288" vertical-offset="29568" max-vertical-offset="46515" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/screen/AboutModMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="24" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="25" column="24" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/screen/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="44" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
+        <state line="45" column="44" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/screen/ExitMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="27" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="21" column="27" selection-start="478" selection-end="478" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/screen/AboutMenu.java">
@@ -653,37 +681,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/gfx/ColorOptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="5" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/icons.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="346" column="21" selection-start="9477" selection-end="9477" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5025">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/gfx/Color.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/gfx/ColorOptions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-          <folding />
-        </state>
+        <state line="2" column="13" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/screen/TitleMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="72" selection-start="1187" selection-end="1187" vertical-scroll-proportion="0.4954955" vertical-offset="300" max-vertical-offset="1035">
+        <state line="49" column="9" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.0" vertical-offset="174" max-vertical-offset="1035" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/entity/Spark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="140" selection-end="140" vertical-scroll-proportion="-0.37387386" vertical-offset="309" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/gfx/Font.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="43" selection-end="43" vertical-scroll-proportion="0.045045044" vertical-offset="0" max-vertical-offset="765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/entity/particle/TextParticle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="196" selection-end="196" vertical-scroll-proportion="0.09009009" vertical-offset="0" max-vertical-offset="840" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/entity/Zombie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="33" selection-start="225" selection-end="225" vertical-scroll-proportion="-0.4954955" vertical-offset="390" max-vertical-offset="1575">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/entity/Mob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="64" selection-start="2893" selection-end="2893" vertical-scroll-proportion="2.8153152" vertical-offset="0" max-vertical-offset="2130">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/entity/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="39" selection-start="2245" selection-end="2245" vertical-scroll-proportion="-0.17117117" vertical-offset="1329" max-vertical-offset="1995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="309" column="43" selection-start="8128" selection-end="8128" vertical-scroll-proportion="0.0" vertical-offset="4068" max-vertical-offset="5025">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/crafting/Crafting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="98" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/entity/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="277" column="45" selection-start="7400" selection-end="7417" vertical-scroll-proportion="0.0" vertical-offset="3555" max-vertical-offset="5745">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/entity/Farmer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="45" selection-start="1810" selection-end="1810" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1620">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mojang/ld22/level/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="251" column="39" selection-start="6577" selection-end="6577" vertical-scroll-proportion="0.8423423" vertical-offset="3024" max-vertical-offset="4515">
+          <folding>
+            <element signature="e#888#918#0" expanded="true" />
           </folding>
         </state>
       </provider>

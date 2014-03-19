@@ -6,12 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 
-import com.mojang.ld22.entity.AirWizard;
-import com.mojang.ld22.entity.Entity;
-import com.mojang.ld22.entity.Mob;
-import com.mojang.ld22.entity.Player;
-import com.mojang.ld22.entity.Slime;
-import com.mojang.ld22.entity.Zombie;
+import com.mojang.ld22.entity.*;
 import com.mojang.ld22.gfx.Screen;
 import com.mojang.ld22.level.levelgen.LevelGen;
 import com.mojang.ld22.level.tile.Tile;
@@ -251,6 +246,10 @@ public class Level {
 				mob = new Slime(lvl);
 			else
 				mob = new Zombie(lvl);
+
+            int lvl2 = random.nextInt(maxLevel - minLevel + 1) + minLevel;
+            if (random.nextInt(2) == 0)
+                mob = new Farmer(lvl2);
 
 			if (mob.findStartPos(this)) {
 				this.add(mob);
