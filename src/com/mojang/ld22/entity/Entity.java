@@ -41,6 +41,9 @@ public class Entity {
 	public void hurt(Mob mob, int dmg, int attackDir) {
 	}
 
+    public void hurt(FriendlyMob friendlyMob, int dmg, int attackDir) {
+    }
+
 	public void hurt(Tile tile, int x, int y, int dmg) {
 	}
 
@@ -112,6 +115,10 @@ public class Entity {
 	public boolean isBlockableBy(Mob mob) {
 		return true;
 	}
+
+    public boolean isBlockableBy(FriendlyMob friendlyMob) {
+        return true;
+    }
 
 	public void touchItem(ItemEntity itemEntity) {
 	}

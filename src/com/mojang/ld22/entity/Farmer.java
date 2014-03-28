@@ -5,7 +5,7 @@ import com.mojang.ld22.gfx.Screen;
 import com.mojang.ld22.item.ResourceItem;
 import com.mojang.ld22.item.resource.Resource;
 
-public class Farmer extends Mob {
+public class Farmer extends FriendlyMob {
     private int xa, ya;
     private int lvl;
     private int randomWalkTime = 0;
@@ -91,7 +91,7 @@ public class Farmer extends Mob {
 
         int count = random.nextInt(2) + 1;
         for (int i = 0; i < count; i++) {
-            level.add(new ItemEntity(new ResourceItem(Resource.acorn), x + random.nextInt(11) - 5, y + random.nextInt(11) - 5));
+            level.add(new ItemEntity(new ResourceItem(Resource.wheat), x + random.nextInt(11) - 5, y + random.nextInt(11) - 5));
         }
 
         if (level.player != null) {

@@ -230,7 +230,8 @@ public class Level {
 
 	public void trySpawn(int count) {
 		for (int i = 0; i < count; i++) {
-			Mob mob;
+            FriendlyMob friendlyMob;
+            Mob mob;
 
 			int minLevel = 1;
 			int maxLevel = 1;
@@ -248,12 +249,16 @@ public class Level {
 				mob = new Zombie(lvl);
 
             int lvl2 = random.nextInt(maxLevel - minLevel + 1) + minLevel;
-            if (random.nextInt(2) == 0)
-                mob = new Farmer(lvl2);
+            // if (random.nextInt(2) == 0)
+            friendlyMob = new Farmer(lvl2);
 
+            if (friendlyMob.findStartPos(this)) {
+                this.add(friendlyMob);
+            }
 			if (mob.findStartPos(this)) {
 				this.add(mob);
 			}
+
 		}
 	}
 

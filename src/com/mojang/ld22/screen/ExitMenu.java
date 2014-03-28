@@ -19,7 +19,7 @@ public class ExitMenu extends Menu {
 
     public void tick() {
         if (input.attack.clicked || input.menu.clicked) {
-            System.exit(1);
+
         }
     }
 }
