@@ -63,10 +63,10 @@ public class CraftingMenu extends Menu {
 	}
 
 	public void render(Screen screen) {
-		Font.renderFrame(screen, "Have", 12, 1, 19, 3);
-		Font.renderFrame(screen, "Cost", 12, 4, 19, 11);
-		Font.renderFrame(screen, "Crafting", 0, 1, 11, 11);
-		renderItemList(screen, 0, 1, 11, 11, recipes, selected);
+		Font.renderFrame(screen, "Have", 12, 1, 38, 6); //19, 11
+		Font.renderFrame(screen, "Cost", 12, 4, 38, 22); //19, 11
+		Font.renderFrame(screen, "Crafting", 0, 1, 22, 22); //11, 11
+		renderItemList(screen, 0, 1, 22, 22, recipes, selected);
 
 		if (recipes.size() > 0) {
 			Recipe recipe = recipes.get(selected);

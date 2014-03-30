@@ -3,12 +3,7 @@ package com.mojang.ld22.crafting;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.mojang.ld22.entity.Anvil;
-import com.mojang.ld22.entity.Chest;
-import com.mojang.ld22.entity.Furnace;
-import com.mojang.ld22.entity.Oven;
-import com.mojang.ld22.entity.Lantern;
-import com.mojang.ld22.entity.Workbench;
+import com.mojang.ld22.entity.*;
 import com.mojang.ld22.item.ToolType;
 import com.mojang.ld22.item.resource.Resource;
 
@@ -17,6 +12,7 @@ public class Crafting {
 	public static final List<Recipe> ovenRecipes = new ArrayList<Recipe>();
 	public static final List<Recipe> furnaceRecipes = new ArrayList<Recipe>();
 	public static final List<Recipe> workbenchRecipes = new ArrayList<Recipe>();
+    public static final List<Recipe> roasterRecipes = new ArrayList<Recipe>();
 
 	static {
 		try {
@@ -27,6 +23,7 @@ public class Crafting {
 			workbenchRecipes.add(new FurnitureRecipe(Workbench.class).addCost(Resource.wood, 20));
 			workbenchRecipes.add(new FurnitureRecipe(Chest.class).addCost(Resource.wood, 20));
 			workbenchRecipes.add(new FurnitureRecipe(Anvil.class).addCost(Resource.ironIngot, 5));
+            workbenchRecipes.add(new FurnitureRecipe(RoastingSpit.class).addCost(Resource.wood, 15).addCost(Resource.cloth, 2));
 
 			workbenchRecipes.add(new ToolRecipe(ToolType.sword, 0).addCost(Resource.wood, 5));
 			workbenchRecipes.add(new ToolRecipe(ToolType.axe, 0).addCost(Resource.wood, 5));
@@ -60,6 +57,8 @@ public class Crafting {
 			furnaceRecipes.add(new ResourceRecipe(Resource.ironIngot).addCost(Resource.ironOre, 4).addCost(Resource.coal, 1));
 			furnaceRecipes.add(new ResourceRecipe(Resource.goldIngot).addCost(Resource.goldOre, 4).addCost(Resource.coal, 1));
 			furnaceRecipes.add(new ResourceRecipe(Resource.glass).addCost(Resource.sand, 4).addCost(Resource.coal, 1));
+
+            roasterRecipes.add(new ResourceRecipe(Resource.rsapple).addCost(Resource.apple, 2));
 
 			ovenRecipes.add(new ResourceRecipe(Resource.bread).addCost(Resource.wheat, 4));
 		} catch (Exception e) {

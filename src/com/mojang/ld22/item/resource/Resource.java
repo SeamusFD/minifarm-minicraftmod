@@ -18,6 +18,8 @@ public class Resource {
 	public static Resource bread = new FoodResource("Bread", 8 + 4 * 32, Color.get(-1, 110, 330, 550), 2, 5);
 	public static Resource apple = new FoodResource("Apple", 9 + 4 * 32, Color.get(-1, 100, 300, 500), 1, 5);
 
+    public static Resource rsapple = new FoodResource("Roasted Apple", 9 + 4 * 32, Color.get(-1, 100, 500, 500), 1, 5);
+
 	public static Resource coal = new Resource("COAL", 10 + 4 * 32, Color.get(-1, 000, 111, 111));
 	public static Resource ironOre = new Resource("I.ORE", 10 + 4 * 32, Color.get(-1, 100, 322, 544));
 	public static Resource goldOre = new Resource("G.ORE", 10 + 4 * 32, Color.get(-1, 110, 440, 553));
@@ -35,7 +37,7 @@ public class Resource {
 	public final int color;
 
 	public Resource(String name, int sprite, int color) {
-		if (name.length() > 6) throw new RuntimeException("Name cannot be longer than six characters!");
+		if (name.length() > 20) throw new RuntimeException("Name cannot be longer than six characters!");
 		this.name = name;
 		this.sprite = sprite;
 		this.color = color;
